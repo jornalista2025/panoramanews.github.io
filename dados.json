@@ -1,13 +1,10 @@
-[
-    {
-        "titulo": "Vila Nova dos Martírios ganha destaque na gestão regional de saúde",
-        "descricao": "A secretária de Saúde de Vila Nova dos Martírios, Dra. Lana Amaral, foi eleita para coordenar a Comissão Intergestora Regional (CIR) de Açailândia no biênio 2025-2026. A escolha ocorreu durante reunião do colegiado, que reúne gestores de oito municípios da região, e reflete o reconhecimento do trabalho desenvolvido no município nos últimos anos.
+{
+    "titulo": "Vila Nova dos Martírios ganha destaque na gestão regional de saúde",
+    "descricao": "A secretária de Saúde de Vila Nova dos Martírios, Dra. Lana Amaral, foi eleita para coordenar a Comissão Intergestora Regional (CIR) de Açailândia no biênio 2025-2026. A escolha ocorreu durante reunião do colegiado, que reúne gestores de oito municípios da região, e reflete o reconhecimento do trabalho desenvolvido no município nos últimos anos.",
+    "imagem": "assets/lana.jpeg",
+    "autor": "Por Edilson Souza"
+}
 
-Com uma gestão focada em inovação e eficiência, Vila Nova dos Martírios tem se destacado na área da saúde pública, conquistando premiações estaduais e nacionais. Agora, à frente da CIR, Dra. Lana terá o desafio de fortalecer as políticas regionais, buscar mais investimentos e ampliar o acesso da população a serviços de qualidade.
-
-A nomeação representa um avanço para a cidade e para toda a região, consolidando o compromisso com a melhoria contínua da assistência à saúde.",
-        "imagem": "noticia1.jpg"
-    },
     {
         "titulo": "Avanço Tecnológico na Saúde",
         "descricao": "Novas tecnologias estão ajudando a salvar vidas em hospitais do país.",
