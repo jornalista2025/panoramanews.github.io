@@ -5,9 +5,19 @@ function toggleMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
     fetch("dados.json")
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro ao carregar o JSON");
+            }
+            return response.json();
+        })
         .then(data => {
             const container = document.getElementById("news-container");
+
+            if (!container) {
+                console.error("Erro: Elemento #news-container não encontrado no HTML.");
+                return;
+            }
 
             // Verifica se há notícias no JSON
             if (!data.length) {
@@ -21,9 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 return `
                     <div class="news-card">
-                        <img src="assets/${noticia.imagem}" alt="${noticia.titulo}">
+                        <img src="${noticia.imagem}" alt="${noticia.titulo}">
                         <h2><a href="noticia.html?id=${index}">${noticia.titulo}</a></h2>
                         <p>${noticia.descricao}</p>
+                        <p class="autor">${noticia.autor ? noticia.autor : "Fonte desconhecida"}</p>
                         <div class="share-buttons">
                             <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(noticia.titulo + ' - ' + urlNoticia)}" target="_blank" class="whatsapp">WhatsApp</a>
                             <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlNoticia)}" target="_blank" class="facebook">Facebook</a>
@@ -38,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("news-container").innerHTML = "<p>Erro ao carregar notícias.</p>";
         });
 });
+
 
 
 
