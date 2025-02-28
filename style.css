@@ -116,6 +116,48 @@ footer {
     font-size: 14px;
     margin: 10px 0;
 }
+/* Estilização dos botões de compartilhamento */
+.share-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.share-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.whatsapp:hover {
+    background-color: #1DA851;
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+.facebook:hover {
+    background-color: #155BB5;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.twitter:hover {
+    background-color: #0D8BDC;
+}
+
 
 
 
