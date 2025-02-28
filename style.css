@@ -1,12 +1,32 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Faz a estrutura ocupar toda a altura da tela */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Ajustando o cabeçalho e centralizando o título */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+}
+
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 15px;
-    background-color: #003366;
-    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .menu-icon {
@@ -31,27 +51,24 @@
     flex-grow: 1;
 }
 
-/* Mantendo o rodapé fixo na parte inferior */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
+/* Faz o conteúdo crescer para empurrar o rodapé para baixo */
 main {
     flex-grow: 1;
+    padding: 20px;
 }
 
+/* Mantendo o rodapé colado no final da página */
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
+
 
 
 
