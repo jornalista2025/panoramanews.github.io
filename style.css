@@ -5,6 +5,28 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #003366;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 120px; /* Ajuste o tamanho da logo */
+}
+
+.menu.open {
+    background: #002244;
+}
+
 
 /* Corpo da página */
 body {
