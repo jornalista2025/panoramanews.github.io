@@ -8,14 +8,15 @@
     {
         "titulo": "Avanço Tecnológico na Saúde",
         "descricao": "Novas tecnologias estão ajudando a salvar vidas em hospitais do país.",
-        "imagem": "noticia2.jpg",
+        "imagem": "assets/noticia2.jpg",
         "autor": "Fonte: Agência de Notícias"
     },
     {
         "titulo": "Campeonato Nacional de Futebol",
         "descricao": "A final do campeonato nacional acontece neste domingo com grandes expectativas.",
-        "imagem": "noticia3.jpg",
+        "imagem": "assets/noticia3.jpg",
         "autor": "Fonte: Esporte Hoje"
     }
 ]
+
 
