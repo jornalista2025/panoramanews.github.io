@@ -19,19 +19,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // Verifica se há notícias no JSON
             if (!data.length) {
                 container.innerHTML = "<p>Nenhuma notícia disponível no momento.</p>";
                 return;
             }
 
-            // Mapeia cada notícia e insere no HTML com botões de compartilhamento
             container.innerHTML = data.map((noticia, index) => {
                 const urlNoticia = `${window.location.origin}/noticia.html?id=${index}`;
 
+                // Verifica se a imagem começa com "http" ou usa o caminho local
+                const caminhoImagem = noticia.imagem.startsWith("http") ? noticia.imagem : `${window.location.origin}/${noticia.imagem}`;
+
                 return `
                     <div class="news-card">
-                        <img src="${noticia.imagem}" alt="${noticia.titulo}" onerror="this.onerror=null; this.src='assets/placeholder.jpg';">
+                        <img src="${caminhoImagem}" alt="${noticia.titulo}" onerror="this.onerror=null; this.src='assets/placeholder.jpg';">
                         <h2><a href="noticia.html?id=${index}">${noticia.titulo}</a></h2>
                         <p>${noticia.descricao}</p>
                         <p class="autor">${noticia.autor ? noticia.autor : "Fonte desconhecida"}</p>
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("news-container").innerHTML = "<p>Erro ao carregar notícias.</p>";
         });
 });
+
 
 
 
