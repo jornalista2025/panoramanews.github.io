@@ -18,8 +18,10 @@ header {
     background-color: #003366;
     color: white;
     padding: 15px;
+    text-align: center;
 }
 
+/* Menu principal */
 .menu {
     display: flex;
     align-items: center;
@@ -29,6 +31,7 @@ header {
     margin: 0 auto;
 }
 
+/* Ícone do menu sanduíche e logo (PN) */
 .menu-icon {
     position: absolute;
     left: 20px;
@@ -44,6 +47,7 @@ header {
     margin-left: 10px;
 }
 
+/* Nome do site centralizado */
 .site-title {
     font-size: 24px;
     font-weight: bold;
@@ -51,23 +55,24 @@ header {
     flex-grow: 1;
 }
 
-/* Faz o conteúdo crescer para empurrar o rodapé para baixo */
+/* Faz o conteúdo principal crescer para ocupar o espaço restante */
 main {
     flex-grow: 1;
     padding: 20px;
 }
 
-/* Mantendo o rodapé colado no final da página */
+/* Rodapé fixo no final da página */
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
     padding: 15px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
 }
+
 
 
 
