@@ -72,6 +72,51 @@ footer {
     bottom: 0;
     left: 0;
 }
+/* Centraliza as notícias na página */
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens no meio da tela */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estiliza os cards de notícias */
+.news-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    width: 300px; /* Define um tamanho fixo para alinhar melhor */
+}
+
+.news-card:hover {
+    transform: scale(1.03);
+}
+
+/* Imagem da notícia */
+.news-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Título e descrição */
+.news-card h2 {
+    color: #003366;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.news-card p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
 
 
 
