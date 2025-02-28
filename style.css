@@ -5,98 +5,55 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background: #003366;
-    color: white;
-}
-
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.logo img {
-    width: 120px; /* Ajuste o tamanho da logo */
-}
-
-.menu.open {
-    background: #002244;
-}
-
-
-/* Corpo da página */
-body {
-    background-color: #f0f4f8;
-    color: #222;
-    text-align: center;
-}
 
 /* Cabeçalho */
 header {
     background-color: #003366;
     color: #fff;
-    padding: 20px;
-    font-size: 24px;
+    padding: 15px 20px;
 }
 
-/* Grid de notícias */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+/* Menu principal */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Estilo dos cards */
-.news-card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.news-card:hover {
-    transform: scale(1.03);
-}
-
-/* Imagem do card */
-.news-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Título e texto */
-.news-card h2 {
-    color: #003366;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.news-card p {
-    color: #555;
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-/* Botão de compartilhamento */
-.share-btn {
-    background: #0066cc;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+/* Ícone do menu sanduíche e logo (PN) */
+.menu-icon {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.share-btn:hover {
-    background: #004999;
+.menu-icon .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
 }
+
+/* Nome do site centralizado */
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 20px;
+    }
+    .menu-icon {
+        font-size: 20px;
+    }
+}
+
 
