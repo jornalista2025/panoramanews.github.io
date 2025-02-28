@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 return `
                     <div class="news-card">
-                        <img src="${noticia.imagem}" alt="${noticia.titulo}">
+                        <img src="${noticia.imagem}" alt="${noticia.titulo}" onerror="this.onerror=null; this.src='assets/placeholder.jpg';">
                         <h2><a href="noticia.html?id=${index}">${noticia.titulo}</a></h2>
                         <p>${noticia.descricao}</p>
                         <p class="autor">${noticia.autor ? noticia.autor : "Fonte desconhecida"}</p>
@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("news-container").innerHTML = "<p>Erro ao carregar notícias.</p>";
         });
 });
+
 
 
 
