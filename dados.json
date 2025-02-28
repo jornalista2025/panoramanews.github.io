@@ -1,1 +1,18 @@
+[
+    {
+        "titulo": "Novo Projeto de Lei Aprovado",
+        "descricao": "O congresso aprovou um novo projeto de lei para melhorias na educação.",
+        "imagem": "noticia1.jpg"
+    },
+    {
+        "titulo": "Avanço Tecnológico na Saúde",
+        "descricao": "Novas tecnologias estão ajudando a salvar vidas em hospitais do país.",
+        "imagem": "noticia2.jpg"
+    },
+    {
+        "titulo": "Campeonato Nacional de Futebol",
+        "descricao": "A final do campeonato nacional acontece neste domingo com grandes expectativas.",
+        "imagem": "noticia3.jpg"
+    }
+]
 
