@@ -1,162 +1,43 @@
-/* Reset básico */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
-/* Faz a estrutura ocupar toda a altura da tela */
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Ajustando o cabeçalho e centralizando o título */
 header {
     background-color: #003366;
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
-/* Menu principal */
 .menu {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Ícone do menu sanduíche e logo (PN) */
-.menu-icon {
-    position: absolute;
-    left: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.menu-icon .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-/* Nome do site centralizado */
-.site-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    flex-grow: 1;
-}
-
-/* Faz o conteúdo principal crescer para ocupar o espaço restante */
-main {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-/* Rodapé fixo no final da página */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-/* Centraliza as notícias na página */
 .news-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os itens no meio da tela */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* Estiliza os cards de notícias */
 .news-card {
     background: white;
-    border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    text-align: center;
-    width: 300px; /* Define um tamanho fixo para alinhar melhor */
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.news-card:hover {
-    transform: scale(1.03);
-}
-
-/* Imagem da notícia */
 .news-card img {
     width: 100%;
-    border-radius: 10px;
-}
-
-/* Título e descrição */
-.news-card h2 {
-    color: #003366;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.news-card p {
-    color: #555;
-    font-size: 14px;
-    margin: 10px 0;
-}
-/* Estilização dos botões de compartilhamento */
-.share-buttons {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.share-buttons a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 12px;
+    height: auto;
     border-radius: 5px;
-    font-size: 12px;
-    text-align: center;
-    transition: 0.3s;
 }
 
-.whatsapp {
-    background-color: #25D366;
-}
-
-.whatsapp:hover {
-    background-color: #1DA851;
-}
-
-.facebook {
-    background-color: #1877F2;
-}
-
-.facebook:hover {
-    background-color: #155BB5;
-}
-
-.twitter {
-    background-color: #1DA1F2;
-}
-
-.twitter:hover {
-    background-color: #0D8BDC;
-}
 
 
 
